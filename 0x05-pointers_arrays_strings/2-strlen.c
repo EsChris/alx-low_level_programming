@@ -7,12 +7,13 @@
 
 int _strlen(char *s)
 {
-	int p = 0;
-	/incremeant up to when the last character is NULL,\0/
-		while (*(s + p) != 0)
-		{
-			p++;
-		}
-	return (p);
-}
+	int i = 1, sum = 0;
+	char pl = s[0];
 
+	while (pl != '\0')
+	{
+		sum++;
+		pl = s[i++];
+	}
+	return (sum);
+}
